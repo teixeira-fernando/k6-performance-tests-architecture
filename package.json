@@ -1,0 +1,12 @@
+{
+  "name": "k6-performance-tests-architecture",
+  "version": "1.0.0",
+  "description": "Architecture to use k6 performance test framework, exploring the usage of the different available extensions and integrations and including examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "k6 run tests/first_example.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
