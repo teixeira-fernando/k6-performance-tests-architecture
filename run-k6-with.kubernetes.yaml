@@ -1,0 +1,11 @@
+apiVersion: k6.io/v1alpha1
+kind: TestRun
+metadata:
+  name: run-k6-with-args
+spec:
+  parallelism: 4
+  script:
+    configMap:
+      name: my-test
+      file: tests/first_example.js
+  arguments:  --tag testid=run-k6-with-args --log-format json
