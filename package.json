@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "k6 run tests/first_example.js",
+    "test:webpack-script": "k6 run dist/webpack.k6script.js",
+    "webpack": "webpack",
     "test:xk6-dashboard": "docker run -v $(pwd)/tests:/tests -p 5665:5665 -it --rm ghcr.io/grafana/xk6-dashboard:latest run --out=dashboard /tests/first_example.js"
   },
   "keywords": [],
